@@ -1,0 +1,2 @@
+# iizna
+Rust製ECSフレームワークです。
