@@ -1,0 +1,15 @@
+# --------------------
+# 
+# iizna.
+# 
+# iizna/Cargo.toml
+# (C) 2023 IIZNA COMMUNITY.
+#
+# iiznaワークスペースの設定です。
+# ====================
+
+[workspace]
+
+members = [
+    "iizna_uti",
+]
