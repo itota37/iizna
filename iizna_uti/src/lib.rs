@@ -7,17 +7,8 @@
 //
 //! iiznaで他の内部クレートに非依存な機能を提供します。
 
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
-}
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+#![doc(html_favicon_url = "https://itota37.github.io/iizna-engine/rsc/iizna_23_1_1.png")]
+#![doc(html_logo_url = "https://itota37.github.io/iizna-engine/rsc/iizna_23_1_1.png")]
+pub mod hash;
+pub mod map;
+pub mod set;

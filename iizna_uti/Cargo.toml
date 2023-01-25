@@ -17,4 +17,3 @@ edition = "2021"
 crate-type = ["rlib"]
 
 [dependencies]
-log = "0.4.7"

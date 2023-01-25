@@ -8,21 +8,11 @@
 //! 高速なハッシュ機能を提供します。
 // =========================
 
-use std::{ 
-    mem::size_of, 
-    ops::BitXor, 
-    hash::{
-        Hasher,
-        BuildHasherDefault,
-    },
-    collections
+use std::{
+    hash::{BuildHasherDefault, Hasher},
+    mem::size_of,
+    ops::BitXor,
 };
-
-/// FxHasherを使用した集合型です。
-pub type FxHashSet<T> = collections::HashSet<T, BuildFxHasher>;
-
-/// FxHasherを使用した連想配列型です。
-pub type FxHashMap<K, V> = collections::HashMap<K, V, BuildFxHasher>;
 
 /// FxHasherを作成するビルダーです。
 pub type BuildFxHasher = BuildHasherDefault<FxHasher>;
